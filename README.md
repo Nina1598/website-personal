@@ -1,2 +1,128 @@
-# website-personal
-web
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Nina</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="bg-purple-100 bg-opacity-30 min-h-screen font-sans">
+
+  <div class="flex flex-col md:flex-row min-h-screen">
+
+    <!-- SIDEBAR -->
+    <aside class="w-full md:w-64 bg-white bg-opacity-90 p-6 space-y-6 sticky top-0 shadow-md">
+      <div class="text-center">
+        <img src="jpg.jpg" alt="Foto Profil" class="w-28 h-28 mx-auto rounded-full border-4 border-purple-300 object-cover">
+        <h2 class="text-xl font-semibold mt-3 text-purple-700">Nina</h2>
+        <p class="text-sm text-gray-500">UI/UX & 3D Design</p>
+      </div>
+      <nav class="space-y-3 text-center md:text-left">
+        <a href="#tentang" class="block px-3 py-2 rounded hover:bg-purple-100">Tentang</a>
+        <a href="#biodata" class="block px-3 py-2 rounded hover:bg-purple-100">Biodata</a>
+        <a href="#hobi" class="block px-3 py-2 rounded hover:bg-purple-100">Hobi</a>
+        <a href="#proyek" class="block px-3 py-2 rounded hover:bg-purple-100">Proyek</a>
+        <a href="#kontak" class="block px-3 py-2 rounded hover:bg-purple-100">Kontak</a>
+      </nav>
+      <footer class="text-xs text-gray-400 text-center pt-10">
+        &copy; 2025 Nina
+      </footer>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-1 px-6 md:px-10 py-10 space-y-16 bg-white bg-opacity-90">
+
+      <!-- Hero -->
+      <section class="text-center" data-aos="fade-down">
+        <h1 class="text-4xl font-bold text-purple-700">Selamat Datang di Profil Saya!</h1>
+        <p class="text-gray-600 mt-2">Halo! Saya Nina,Silakan jelajahi halaman ini untuk mengenal saya lebih jauh..</p>
+      </section>
+
+      <!-- Tentang Saya -->
+      <section id="tentang" class="bg-white rounded-xl shadow p-6" data-aos="fade-up">
+        <h2 class="text-2xl font-semibold text-purple-700 mb-4">Tentang Saya</h2>
+        <p>Saya adalah pemula yang belajar UI/UX dan Blender. Saya percaya desain adalah bahasa visual yang kuat untuk menyampaikan ide.</p>
+      </section>
+
+      <!-- Biodata -->
+      <section id="biodata" class="bg-white rounded-xl shadow p-6" data-aos="fade-up">
+        <h2 class="text-2xl font-semibold text-purple-700 mb-4">Biodata Diri</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li><strong>Nama:</strong> Nina</li>
+          <li><strong>Tempat, Tanggal Lahir:</strong> Medan, 6 Februari 2006</li>
+          <li><strong>Alamat:</strong> Lubuk Pakam</li>
+          <li><strong>No HP:</strong> 0822984756</li>
+        </ul>
+      </section>
+
+      <!-- Hobi -->
+      <section id="hobi" class="bg-white rounded-xl shadow p-6" data-aos="fade-up">
+        <h2 class="text-2xl font-semibold text-purple-700 mb-4">🎨 Hobi</h2>
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-purple-50 p-4 rounded-lg shadow hover:shadow-md transition">
+            <h3 class="font-bold text-purple-700">Membaca</h3>
+            <p class="text-sm text-gray-600">Menikmati buku fiksi dan nonfiksi untuk menambah wawasan.</p>
+          </div>
+          <div class="bg-purple-50 p-4 rounded-lg shadow hover:shadow-md transition">
+            <h3 class="font-bold text-purple-700">Desain 3D</h3>
+            <p class="text-sm text-gray-600">Menggunakan Blender untuk membuat model dan animasi.</p>
+          </div>
+          <div class="bg-purple-50 p-4 rounded-lg shadow hover:shadow-md transition">
+            <h3 class="font-bold text-purple-700">Menggambar Digital</h3>
+            <p class="text-sm text-gray-600">Ilustrasi karakter dan konsep menggunakan media digital.</p>
+          </div>
+          <div class="bg-purple-50 p-4 rounded-lg shadow hover:shadow-md transition">
+            <h3 class="font-bold text-purple-700">Musik</h3>
+            <p class="text-sm text-gray-600">Mendengarkan musik untuk inspirasi dan relaksasi.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyek -->
+       <!-- Proyek -->
+      <section id="proyek" class="space-y-6" data-aos="fade-up">
+        <h2 class="text-2xl font-semibold text-purple-700">Proyek Saya</h2>
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-xl shadow p-4">
+            <img src="bangunan.jpg" class="w-full h-40 object-cover rounded" />
+            <h3 class="text-lg font-bold mt-3 text-purple-600">Desain Blender</h3>
+            <p class="text-sm">Proyek modeling 3D dengan Blender.</p>
+            <a href="https://drive.google.com/file/d/105eR09YySsdltfyXU87Y26Zqnp7ufZdO/view?usp=drivesdk " target="_blank" class="inline-block mt-2 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 text-sm">Lihat Proyek</a>
+          </div>
+          <div class="bg-white rounded-xl shadow p-4">
+            <img src="menu.png" class="w-full h-40 object-cover rounded" />
+            <h3 class="text-lg font-bold mt-3 text-purple-600">Halaman Menu HTML</h3>
+            <p class="text-sm">Halaman menu dengan HTML dan CSS.</p>
+            <a href="https://drive.google.com/file/d/1E3WV3ssi7woav29M3o65vk3T7_afFNR-/view?usp=drive_link" target="_blank" class="inline-block mt-2 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 text-sm">Lihat Proyek</a>
+</div>
+</div>
+</section>
+
+      <!-- Kontak -->
+      <section id="kontak" class="bg-white rounded-xl shadow p-6" data-aos="fade-up">
+        <h2 class="text-2xl font-semibold text-purple-700 mb-4">Kontak</h2>
+        <ul class="text-sm space-y-2">
+          <li><strong>Email:</strong> <a href="mailto:ninafrasiska57@gmail.com" class="text-blue-600 hover:underline">ninafrasiska57@gmail.com</a></li>
+          <li><strong>Instagram:</strong> <a href="https://www.instagram.com/_nninnnna" target="_blank" class="text-blue-600 hover:underline">@_nninnnna</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/Nina1598" target="_blank" class="text-blue-800 hover:underline">github.com/Nina1598</a></li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- AOS Animasi -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 800 });
+  </script>
+</body>
+</html>
