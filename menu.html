@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu Restoran</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #82b5e7, #e9ecef);
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #343a40;
+    }
+
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .menu-card {
+      background-color: #ffffff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .menu-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .menu-name {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #212529;
+    }
+
+    .menu-price {
+      font-size: 1.1em;
+      color: #28a745;
+      margin-top: 5px;
+    }
+
+    .menu-desc {
+      color: #6c757d;
+      font-size: 0.95em;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🍴 Menu Spesial Hari Ini</h1>
+
+  <div class="menu-container">
+    <div class="menu-card">
+      <div class="menu-name">Nasi Goreng Spesial</div>
+      <div class="menu-price">Rp15.000</div>
+      <div class="menu-desc">Nasi goreng dengan topping telur, ayam, dan kerupuk.</div>
+    </div>
+
+    <div class="menu-card">
+      <div class="menu-name">Mie Ayam Bakso</div>
+      <div class="menu-price">Rp14.000</div>
+      <div class="menu-desc">Mie ayam lembut disajikan dengan bakso dan kuah gurih.</div>
+    </div>
+
+    <div class="menu-card">
+      <div class="menu-name">Soto Ayam Lamongan</div>
+      <div class="menu-price">Rp13.000</div>
+      <div class="menu-desc">Soto khas Lamongan dengan koya dan suwiran ayam kampung.</div>
+    </div>
+
+    <div class="menu-card">
+      <div class="menu-name">Es Teh Manis</div>
+      <div class="menu-price">Rp5.000</div>
+      <div class="menu-desc">Teh melati manis disajikan dingin, segar dan menyegarkan.</div>
+    </div>
+
+    <div class="menu-card">
+      <div class="menu-name">Jus Alpukat Cokelat</div>
+      <div class="menu-price">Rp10.000</div>
+      <div class="menu-desc">Jus alpukat segar dengan siraman cokelat kental manis.</div>
+    </div>
+  </div>
+
+</body>
+</html>
