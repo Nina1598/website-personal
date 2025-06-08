@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio Nina</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
   <style>
     body {
       background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
@@ -16,10 +16,22 @@
 </head>
 <body class="bg-purple-100 bg-opacity-30 min-h-screen font-sans">
 
+  <!-- Mobile Header -->
+  <div class="md:hidden bg-white bg-opacity-90 p-4 flex justify-between items-center sticky top-0 z-50 shadow">
+    <h1 class="text-xl font-bold text-purple-700">Nina</h1>
+    <button onclick="toggleSidebar()" class="text-purple-700 focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
   <div class="flex flex-col md:flex-row min-h-screen">
 
-    <!-- SIDEBAR -->
-    <aside class="w-full md:w-64 bg-white bg-opacity-90 p-6 space-y-6 sticky top-0 shadow-md">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="hidden md:block w-full md:w-64 bg-white bg-opacity-90 p-6 space-y-6 shadow-md sticky top-0 z-40">
       <div class="text-center">
         <img src="jpg.jpg" alt="Foto Profil" class="w-28 h-28 mx-auto rounded-full border-4 border-purple-300 object-cover">
         <h2 class="text-xl font-semibold mt-3 text-purple-700">Nina</h2>
@@ -37,8 +49,8 @@
       </footer>
     </aside>
 
-    <!-- MAIN CONTENT -->
-    <main class="flex-1 px-6 md:px-10 py-10 space-y-16 bg-white bg-opacity-90">
+    <!-- Konten Utama -->
+    <main class="flex-1 px-4 md:px-10 py-10 space-y-16 bg-white bg-opacity-90">
 
       <!-- Hero -->
       <section class="text-center" data-aos="fade-down">
@@ -46,7 +58,7 @@
         <p class="text-gray-600 mt-2">Halo! Saya Nina,Silakan jelajahi halaman ini untuk mengenal saya lebih jauh..</p>
       </section>
 
-      <!-- Tentang Saya -->
+      <!-- Tentang -->
       <section id="tentang" class="bg-white rounded-xl shadow p-6" data-aos="fade-up">
         <h2 class="text-2xl font-semibold text-purple-700 mb-4">Tentang Saya</h2>
         <p>Saya adalah pemula yang belajar UI/UX dan Blender. Saya percaya desain adalah bahasa visual yang kuat untuk menyampaikan ide.</p>
@@ -77,7 +89,7 @@
           </div>
           <div class="bg-purple-50 p-4 rounded-lg shadow hover:shadow-md transition">
             <h3 class="font-bold text-purple-700">Menggambar Digital</h3>
-            <p class="text-sm text-gray-600">Ilustrasi karakter dan konsep menggunakan media digital.</p>
+            <p class="text-sm text-gray-600">Ilustrasi karakter dan konsep menggunakan tablet digital.</p>
           </div>
           <div class="bg-purple-50 p-4 rounded-lg shadow hover:shadow-md transition">
             <h3 class="font-bold text-purple-700">Musik</h3>
@@ -87,7 +99,6 @@
       </section>
 
       <!-- Proyek -->
-       <!-- Proyek -->
       <section id="proyek" class="space-y-6" data-aos="fade-up">
         <h2 class="text-2xl font-semibold text-purple-700">Proyek Saya</h2>
         <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
@@ -95,16 +106,20 @@
             <img src="bangunan.jpg" class="w-full h-40 object-cover rounded" />
             <h3 class="text-lg font-bold mt-3 text-purple-600">Desain Blender</h3>
             <p class="text-sm">Proyek modeling 3D dengan Blender.</p>
-            <a href="https://drive.google.com/file/d/105eR09YySsdltfyXU87Y26Zqnp7ufZdO/view?usp=drivesdk " target="_blank" class="inline-block mt-2 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 text-sm">Lihat Proyek</a>
+            <a href="https://drive.google.com/file/d/105eR09YySsdltfyXU87Y26Zqnp7ufZdO/view?usp=drivesdk"
+              target="_blank"
+              class="inline-block mt-2 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 text-sm">Lihat Proyek</a>
           </div>
           <div class="bg-white rounded-xl shadow p-4">
             <img src="menu.png" class="w-full h-40 object-cover rounded" />
             <h3 class="text-lg font-bold mt-3 text-purple-600">Halaman Menu HTML</h3>
             <p class="text-sm">Halaman menu dengan HTML dan CSS.</p>
-            <a href="https://drive.google.com/file/d/1E3WV3ssi7woav29M3o65vk3T7_afFNR-/view?usp=drive_link" target="_blank" class="inline-block mt-2 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 text-sm">Lihat Proyek</a>
-</div>
-</div>
-</section>
+            <a href="https://drive.google.com/file/d/1E3WV3ssi7woav29M3o65vk3T7_afFNR-/view?usp=drive_link"
+              target="_blank"
+              class="inline-block mt-2 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 text-sm">Lihat Proyek</a>
+          </div>
+        </div>
+      </section>
 
       <!-- Kontak -->
       <section id="kontak" class="bg-white rounded-xl shadow p-6" data-aos="fade-up">
@@ -119,10 +134,14 @@
     </main>
   </div>
 
-  <!-- AOS Animasi -->
+  <!-- AOS Script -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({ once: true, duration: 800 });
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('hidden');
+    }
   </script>
 </body>
 </html>
